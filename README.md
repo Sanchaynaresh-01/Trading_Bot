@@ -283,7 +283,6 @@ Sample log entries:
 
 ## 📄 License
 
-This project was built as an application task submission. Feel free to use and modify.
-#   T r a d i n g _ B o t  
- #   T r a d i n g _ B o t  
+This project was built as an application task submission. 
+ 
  
