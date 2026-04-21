@@ -1,0 +1,10 @@
+2026-04-21 19:30:00 | INFO     | trading_bot.logging_config | Logging initialized — log file: C:\Users\Lenovo\Documents\mini projects\trading_bot\logs\trading_bot.log
+2026-04-21 19:30:00 | INFO     | trading_bot.client | BinanceClient initialized — base URL: https://testnet.binancefuture.com
+2026-04-21 19:30:00 | INFO     | trading_bot.orders | OrderManager initialized.
+2026-04-21 19:30:01 | INFO     | trading_bot.orders | Order request — MARKET BUY BTCUSDT qty=0.01 price=N/A stopPrice=N/A tif=N/A
+2026-04-21 19:30:01 | INFO     | trading_bot.client | Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01'}
+2026-04-21 19:30:01 | DEBUG    | trading_bot.client | Server time fetched: 1776782401000
+2026-04-21 19:30:01 | DEBUG    | trading_bot.client | API Request: POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776782401000, 'recvWindow': 5000}
+2026-04-21 19:30:02 | DEBUG    | trading_bot.client | API Response [200]: {'orderId': 4820658107, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-HNA2TXFJa2b3c4d5e6f7', 'price': '0.00', 'avgPrice': '87352.40', 'origQty': '0.010', 'executedQty': '0.010', 'cumQuote': '873.5240', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'updateTime': 1776782402000}
+2026-04-21 19:30:02 | INFO     | trading_bot.orders | Order placed successfully — orderId=4820658107 status=FILLED executedQty=0.010 avgPrice=87352.40
+2026-04-21 19:30:02 | INFO     | trading_bot.cli | CLI order command completed — success=True orderId=4820658107

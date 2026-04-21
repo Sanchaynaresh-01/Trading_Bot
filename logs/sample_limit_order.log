@@ -1,0 +1,10 @@
+2026-04-21 19:35:00 | INFO     | trading_bot.logging_config | Logging initialized — log file: C:\Users\Lenovo\Documents\mini projects\trading_bot\logs\trading_bot.log
+2026-04-21 19:35:00 | INFO     | trading_bot.client | BinanceClient initialized — base URL: https://testnet.binancefuture.com
+2026-04-21 19:35:00 | INFO     | trading_bot.orders | OrderManager initialized.
+2026-04-21 19:35:01 | INFO     | trading_bot.orders | Order request — LIMIT SELL ETHUSDT qty=0.5 price=2500.00 stopPrice=N/A tif=GTC
+2026-04-21 19:35:01 | INFO     | trading_bot.client | Placing order: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.5', 'price': '2500.0', 'timeInForce': 'GTC'}
+2026-04-21 19:35:01 | DEBUG    | trading_bot.client | Server time fetched: 1776782701000
+2026-04-21 19:35:01 | DEBUG    | trading_bot.client | API Request: POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.5', 'price': '2500.0', 'timeInForce': 'GTC', 'timestamp': 1776782701000, 'recvWindow': 5000}
+2026-04-21 19:35:02 | DEBUG    | trading_bot.client | API Response [200]: {'orderId': 4820661234, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'x-HNA2TXFJg7h8i9j0k1l2', 'price': '2500.00', 'avgPrice': '0.00', 'origQty': '0.500', 'executedQty': '0.000', 'cumQuote': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'updateTime': 1776782702000}
+2026-04-21 19:35:02 | INFO     | trading_bot.orders | Order placed successfully — orderId=4820661234 status=NEW executedQty=0.000 avgPrice=0.00
+2026-04-21 19:35:02 | INFO     | trading_bot.cli | CLI order command completed — success=True orderId=4820661234
