@@ -166,7 +166,6 @@ Features:
 
 ### Market Order Output
 
-```
 ╔══════════════════════════════════════════════╗
 ║    🤖 Binance Futures Trading Bot           ║
 ║       Testnet (USDT-M) Edition              ║
@@ -201,9 +200,8 @@ Connecting to Binance Futures Testnet...
 └────────────────────┴────────────────────────┘
 
 🎉 Order executed successfully!
-```
 
----
+
 
 ## 🔧 Supported Order Types
 
@@ -213,7 +211,7 @@ Connecting to Binance Futures Testnet...
 | **LIMIT** | symbol, side, quantity, price | Places at specified price, waits for fill |
 | **STOP_LIMIT** | symbol, side, quantity, price, stop_price | Triggers limit order when stop price is reached |
 
----
+
 
 ## 📝 Logging
 
@@ -225,18 +223,18 @@ All API requests, responses, and errors are logged to `logs/trading_bot.log`:
 
 Sample log entries:
 
-```
+
 2026-04-21 19:30:00 | INFO     | trading_bot.client | BinanceClient initialized — base URL: https://testnet.binancefuture.com
 2026-04-21 19:30:01 | INFO     | trading_bot.orders | Order request — MARKET BUY BTCUSDT qty=0.01 price=N/A
 2026-04-21 19:30:02 | DEBUG    | trading_bot.client | API Request: POST /fapi/v1/order | Params: {symbol: BTCUSDT, side: BUY, type: MARKET, quantity: 0.01}
 2026-04-21 19:30:02 | INFO     | trading_bot.orders | Order placed successfully — orderId=123456 status=FILLED
-```
 
----
+
+
 
 ## 🏗️ Architecture
 
-```
+
 ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐
 │   CLI Layer  │     │   Web UI     │     │   Validators     │
 │  (cli.py)    │     │  (ui.py)     │     │ (validators.py)  │
@@ -258,9 +256,8 @@ Sample log entries:
                 │  Binance Futures   │
                 │  Testnet REST API  │
                 └────────────────────┘
-```
 
----
+
 
 ## ⚠️ Assumptions
 
@@ -270,8 +267,6 @@ Sample log entries:
 4. **No Order Book Analysis** — This is a simplified order placement tool, not a trading strategy engine.
 5. **Symbol Validation** — Accepts any `<BASE>USDT` pattern. The API will reject invalid symbols with a clear error message.
 6. **Quantity Precision** — Quantities are passed as-is. The API enforces its own precision rules per symbol.
-
----
 
 ## ✅ Bonus Features Implemented
 
